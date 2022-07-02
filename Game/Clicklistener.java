@@ -2,11 +2,14 @@ package Game;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+
 import javax.swing.Timer;
 
 public class Clicklistener implements ActionListener {
 
 
+	
 	public Card[] clist;
 	
 	public GameHandler gh;
@@ -24,7 +27,7 @@ public class Clicklistener implements ActionListener {
 	}
 		
 	
-	public void NotifyGameLogicButtonIsClicked(Card C) {
+	public void NotifyGameLogicButtonIsClicked(Card C) throws IOException, Exception {
 		
 			this.gh.gamelogic.CardIsClicked(C);
 		
@@ -45,7 +48,15 @@ public class Clicklistener implements ActionListener {
 
 			if (e.getSource() == this.clist[t]) {
 				
-				this.NotifyGameLogicButtonIsClicked(this.clist[t]) ;
+				try {
+					this.NotifyGameLogicButtonIsClicked(this.clist[t]) ;
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		  }
 		

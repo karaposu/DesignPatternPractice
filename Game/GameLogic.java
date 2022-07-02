@@ -1,24 +1,26 @@
 package Game;
 
 import java.util.ArrayList;
-//import javax.swing.Timer;
+import java.io.File;
+import java.io.IOException;
+
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.UnsupportedAudioFileException;
 public class GameLogic {
 	
 
-	
 	public GameHandler gh;
 
-//	public Timer turnDownTimer;
-
-
-	
-//	public void GameLogic() {
-//
-//
-//	}
 	
 	
-	public void CardIsClicked(Card card) {
+	public void CardIsClicked(Card card) throws IOException, Exception {
+		
+	if (card.locked==true) {
+		
+	}
+	else {
 
 	  if (this.gh.cardsManager.listopenedcards.size() == 0) {
 		this.gh.addCardtoOpenedCards(card);
@@ -27,14 +29,30 @@ public class GameLogic {
 	  }
 
 	 else if (gh.cardsManager.listopenedcards.size() == 1) {
+		 
+	    
 		this.gh.addCardtoOpenedCards(card);
 		card.SetFrontIcon();
-		gh.clicklistener.turnDownTimer.start();
+		
 
-	 }
+		
+		if ( gh.cardsManager.detectMatch()==true) {
 			
+			this.playMusic();
+			gh.cardsManager.lockCards();
+			this.gh.cardsManager.listopenedcards.clear();
+		}
+		else {
+			gh.clicklistener.turnDownTimer.start();
+			
+		}
 		
 		
+		
+	 }
+
+   }
+	  
 		
 	}
 	
@@ -50,6 +68,26 @@ public class GameLogic {
 
 		
 	}
+	
+	
+	public void playMusic() throws Exception, IOException {
+
+		
+
+		String soundName = "match_detected.wav";    
+		AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(soundName).getAbsoluteFile());
+		Clip clip = AudioSystem.getClip();
+		clip.open(audioInputStream);
+		clip.start();
+
+
+			
+		}
+	
+	
+	
+	
+	
 
 }
 

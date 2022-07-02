@@ -20,6 +20,39 @@ public class CardsManager {
 	ArrayList<Card> listopenedcards = new ArrayList<Card>(16);
 
 	boolean locked = false;
+	
+	
+	
+	public void lockCards() {
+
+		
+	 this.listopenedcards.get(0).locked=true;
+	 this.listopenedcards.get(1).locked=true;
+	 
+	
+			
+
+
+	}
+	
+	
+	public boolean detectMatch() {
+
+		boolean match=false;
+		if (this.listopenedcards.size()==2) {
+			
+			if(	this.listopenedcards.get(0).id==this.listopenedcards.get(1).id ) {
+			
+
+			match= true;
+			
+			}
+			else {match= false;}
+		}
+		return match;
+
+
+	}
 
 	public Card[] shuffleCards(Card[] array) {
 
