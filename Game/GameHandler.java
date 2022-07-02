@@ -19,6 +19,7 @@ public class GameHandler {
 
 		this.createCardsManager();
 
+
 		ImageIcon[] icons = this.cardsManager.loadimages();
 
 		Card[] cards = this.cardsManager.createCards(icons);

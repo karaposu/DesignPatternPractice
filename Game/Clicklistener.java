@@ -6,6 +6,7 @@ import javax.swing.Timer;
 
 public class Clicklistener implements ActionListener {
 
+
 	public Card[] clist;
 	
 	public GameHandler gh;

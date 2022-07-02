@@ -11,7 +11,6 @@ import javax.swing.JButton;
 
 import Game.Card;
 import java.util.ArrayList;
-
 public class CardsManager {
 
 	Card[] cards;
