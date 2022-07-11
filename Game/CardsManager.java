@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;
+import java.util.logging.Level;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -16,6 +17,8 @@ public class CardsManager {
 	Card[] cards;
 
 	Card[] openedcards;
+	
+	ImageIcon[] imageIcons;
 
 	ArrayList<Card> listopenedcards = new ArrayList<Card>(16);
 
@@ -37,6 +40,8 @@ public class CardsManager {
 	
 	
 	public boolean detectMatch() {
+		
+		MyLogger.log(Level.INFO, "------ detectMatch()"); 
 
 		boolean match=false;
 		if (this.listopenedcards.size()==2) {
@@ -54,9 +59,13 @@ public class CardsManager {
 
 	}
 
-	public Card[] shuffleCards(Card[] array) {
+	public Card[] shuffleCards() {
+		
+		MyLogger.log(Level.INFO, "------ shuffleCards()"); 
 
 		Random RANDOM = new Random();
+		
+		Card[] array=this.cards;
 
 		for (int i = 0; i < array.length; i++) {
 
@@ -66,13 +75,21 @@ public class CardsManager {
 			array[nuovaPosizione] = array[i];
 			array[i] = swap;
 		}
+		this.cards= array;
+		
+		
 
+		
+		
 		return array;
 
 	}
 
-	public Card[] createCards(ImageIcon[] a) {
+	public Card[] createCards() {
+		
+		MyLogger.log(Level.INFO, "------ createCards()"); 
 
+//		a=this.imageIcons;
 		Card[] cards = new Card[16];
 
 		ImageIcon[] Icons = this.loadimages();
@@ -91,14 +108,24 @@ public class CardsManager {
 
 			ImageIcon backIcon = Icons[8];
 
-			Card newCard = new Card(num, img_card, backIcon);
+			Card newCard = new Card(i, num, img_card, backIcon);
+			
+			newCard.setIcon(backIcon);
+
+			newCard.setVisible(true);
+			newCard.setOpaque(false);
 
 //			System.out.println("dsa");
 			cards[i] = newCard;
 
 		}
+		this.cards=cards;
+		
+		this.shuffleCards();
+		
 
-		return cards;
+		
+		return this.cards;
 
 	}
 
@@ -124,6 +151,7 @@ public class CardsManager {
 
 		}
 
+		this.imageIcons= imageIcons;
 		return imageIcons;
 
 	}

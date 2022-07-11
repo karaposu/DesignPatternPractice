@@ -9,23 +9,20 @@ public class Card extends JButton {
 	ImageIcon backImage;
 	boolean locked = false;
 	int id;
+	int unique_id;
 	boolean activeIcon = false;
 	boolean matched = false;
 
-	public Card(int num, ImageIcon on, ImageIcon arka) {
+	public Card(int unique_id,int num, ImageIcon on, ImageIcon arka) {
 
 		this.frontImage = on;
 		this.backImage = arka;
 		this.id = num;
+		this.unique_id = unique_id;
 //		boolean faceUp = false; 
 
 	}
 
-	public boolean WhichSideIsOn() {
-
-		return this.activeIcon;
-
-	}
 
 	public void LockTheCard() {
 
