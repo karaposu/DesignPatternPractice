@@ -1,0 +1,34 @@
+0000000000000000000000000000000000000000 35bce83fcda1a3429541a25e0af5b8d94f2b1fef Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656677113 +0700	commit (initial): first commit
+35bce83fcda1a3429541a25e0af5b8d94f2b1fef 0000000000000000000000000000000000000000 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656688502 +0700	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 35bce83fcda1a3429541a25e0af5b8d94f2b1fef Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656688502 +0700	Branch: renamed refs/heads/master to refs/heads/main
+35bce83fcda1a3429541a25e0af5b8d94f2b1fef dc2b7f2b828dd87d98e2ad7403c38f2891eaa60d Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656688814 +0700	commit: orig codes
+dc2b7f2b828dd87d98e2ad7403c38f2891eaa60d dc2b7f2b828dd87d98e2ad7403c38f2891eaa60d Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656689151 +0700	checkout: moving from main to v1.1
+dc2b7f2b828dd87d98e2ad7403c38f2891eaa60d 73a462a765a6d56c0a450fef20636b32f9273bb1 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656716015 +0700	commit: new version with lower coupling
+73a462a765a6d56c0a450fef20636b32f9273bb1 73a462a765a6d56c0a450fef20636b32f9273bb1 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656717016 +0700	reset: moving to HEAD
+73a462a765a6d56c0a450fef20636b32f9273bb1 73a462a765a6d56c0a450fef20636b32f9273bb1 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656744301 +0700	checkout: moving from v1.1 to v1.1
+73a462a765a6d56c0a450fef20636b32f9273bb1 dc2b7f2b828dd87d98e2ad7403c38f2891eaa60d Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656744306 +0700	checkout: moving from v1.1 to main
+dc2b7f2b828dd87d98e2ad7403c38f2891eaa60d 73a462a765a6d56c0a450fef20636b32f9273bb1 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656744316 +0700	checkout: moving from main to v1.1
+73a462a765a6d56c0a450fef20636b32f9273bb1 11eff56c9a49b769fe30ccf7ce9e0ca7efb8801f Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656744675 +0700	commit: v1.1
+11eff56c9a49b769fe30ccf7ce9e0ca7efb8801f 11eff56c9a49b769fe30ccf7ce9e0ca7efb8801f Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656745085 +0700	checkout: moving from v1.1 to v1.2
+11eff56c9a49b769fe30ccf7ce9e0ca7efb8801f 437d0a13633c165c8842016deb3aff42d08b0574 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656752944 +0700	commit: v1.2
+0000000000000000000000000000000000000000 2924e2e33ee091744ed57ba704e4c5a79a86a78f Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656753823 +0700	commit (initial): diagram
+2924e2e33ee091744ed57ba704e4c5a79a86a78f 437d0a13633c165c8842016deb3aff42d08b0574 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656753953 +0700	checkout: moving from assets to v1.2
+437d0a13633c165c8842016deb3aff42d08b0574 41cb34fe2b695f35c247c778a9dc1433b3e2a675 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656754671 +0700	commit: v1.2
+41cb34fe2b695f35c247c778a9dc1433b3e2a675 2924e2e33ee091744ed57ba704e4c5a79a86a78f Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656754813 +0700	checkout: moving from v1.2 to assets
+2924e2e33ee091744ed57ba704e4c5a79a86a78f 5435030e4c9904656fff58ac0c880efe1752cca5 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656754982 +0700	commit: assests
+5435030e4c9904656fff58ac0c880efe1752cca5 c4ee803c775f9f0ac7106c8a5516d24de9a9be0c Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656764965 +0700	commit: adfa
+c4ee803c775f9f0ac7106c8a5516d24de9a9be0c 41cb34fe2b695f35c247c778a9dc1433b3e2a675 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656765131 +0700	checkout: moving from assets to v1.2
+41cb34fe2b695f35c247c778a9dc1433b3e2a675 abc33702f5180c4474aa31d09b58e634ee3559c5 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656927944 +0700	commit: adsf
+abc33702f5180c4474aa31d09b58e634ee3559c5 abc33702f5180c4474aa31d09b58e634ee3559c5 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1656927991 +0700	checkout: moving from v1.2 to v1.3
+abc33702f5180c4474aa31d09b58e634ee3559c5 55eb4b4169afa3bcb4c1521bf64099233df676d4 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657567353 +0700	commit: v1.3'
+55eb4b4169afa3bcb4c1521bf64099233df676d4 c4ee803c775f9f0ac7106c8a5516d24de9a9be0c Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657567845 +0700	checkout: moving from v1.3 to assets
+c4ee803c775f9f0ac7106c8a5516d24de9a9be0c dbc08df8acab8b079641346626b6e34db18941ec Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657568115 +0700	commit: assests update for v1.3 diagram
+dbc08df8acab8b079641346626b6e34db18941ec 55eb4b4169afa3bcb4c1521bf64099233df676d4 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657568148 +0700	checkout: moving from assets to v1.3
+55eb4b4169afa3bcb4c1521bf64099233df676d4 e6e22902df79f466c42d7fb90f40fba739ba0d5a Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657569006 +0700	commit: readme update
+e6e22902df79f466c42d7fb90f40fba739ba0d5a 5d18f742b6e72d2d311406add897ecd07d1a72d5 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657569451 +0700	commit: 1.3 setting
+5d18f742b6e72d2d311406add897ecd07d1a72d5 c5a53506f0c1ef5bed3248fec9adbb0fd5259a53 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657571280 +0700	commit: vaf
+c5a53506f0c1ef5bed3248fec9adbb0fd5259a53 dbc08df8acab8b079641346626b6e34db18941ec Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657571830 +0700	checkout: moving from v1.3 to assets
+dbc08df8acab8b079641346626b6e34db18941ec 3ee95ed7a291e12f28f13bd07759943fc5935225 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657572038 +0700	commit: assets update
+3ee95ed7a291e12f28f13bd07759943fc5935225 3ee95ed7a291e12f28f13bd07759943fc5935225 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657572994 +0700	reset: moving to HEAD
+3ee95ed7a291e12f28f13bd07759943fc5935225 490a9918e7dd59939d93dce07ed06f25a566c1fe Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657573205 +0700	commit: adf
+490a9918e7dd59939d93dce07ed06f25a566c1fe c5a53506f0c1ef5bed3248fec9adbb0fd5259a53 Enes Esvet Kuzucu <eneskuzucu@hotmail.com> 1657573958 +0700	checkout: moving from assets to v1.3
