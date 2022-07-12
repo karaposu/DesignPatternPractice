@@ -1,0 +1,109 @@
+title Sequence Diagram for MemoryGame 
+
+participant User
+
+
+ICommand
+Game->Game:ICommand intercafe
+
+User->Game:starts app
+Game->GameHandler:init GameHandler()
+
+GameHandler->Cardmanager:init CardManager()
+
+GameHandler->Cardmanager:createCards()
+
+Cardmanager->Card: Create 16 Cards
+
+Cardmanager<<--Card: Create 16 Cards
+
+
+GameHandler->CommandListener:init CommandListener()
+
+GameHandler->CommandListener:attach card click behaviour to CL
+
+GameHandler->GameHandler:drawFrame()
+
+GameHandler->Gamelogic:init GameLogic()
+
+
+
+User->CommandListener: user clicks on a card
+
+
+CommandListener->CommandListener:ButtonIsClicked()
+
+
+CommandListener->CommandListener:create ButtonClickCommand() instance
+
+CommandListener->CommandListener: run ButtonClickCommand().execute 
+
+CommandListener->GameHandler: input(ICommand)
+
+
+
+GameHandler->GameHandler:CardIsClicked()
+GameHandler->Gamelogic:CardIsClicked()
+
+alt if card is not locked :
+
+alt if size of OpenedCards is 0 :
+
+
+Gamelogic->GameHandler:addCardtoOpenedCards()
+
+Gamelogic->Gamelogic:SetFrontIcon();
+
+
+else 
+
+Gamelogic->GameHandler:addCardtoOpenedCards()
+
+Gamelogic->Gamelogic:SetFrontIcon();
+
+GameHandler->Cardmanager:detectMatch()
+
+alt if detectMatch()==true:
+GameHandler->Cardmanager:lockCards()
+
+GameHandler->Cardmanager:listopenedcards.clear()
+else if detectMatch()==false:
+
+GameHandler->CommandListener:turnDownTimer.start()
+
+CommandListener->CommandListener:TimerIsActivated()
+
+
+CommandListener->CommandListener:TimerActivatedCommand().execute
+
+
+
+CommandListener->GameHandler:TimerIsActivated()
+
+GameHandler->Gamelogic:TimerEventIsActivated()
+
+
+Gamelogic->Cardmanager:SetBackIcon() for all open cards
+
+Gamelogic->Cardmanager:listopenedcards.clear()
+
+end
+
+
+
+end
+
+
+end 
+
+
+
+
+
+
+
+
+
+
+
+
