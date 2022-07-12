@@ -1,4 +1,4 @@
-![Demo Animation](../assets/Game/class_diagram_v1.3.png?raw=true)
+![Demo Animation](/../assets/Game/class_diagram_v1.3.png?raw=true)
 
 
 ![Demo Animation](/../assets/Game/memorygame_SequanceDiagram.png?raw=true)
